@@ -1,0 +1,57 @@
+body {
+    font-family: "BIZ UDPGothic" ,serif;
+    font-size: 29px;
+    line-height: 155%;
+    letter-spacing: 1px;
+    margin: 30px;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+}
+
+.box-004 {
+    position: relative;
+    max-width: 70%;
+    padding: 1em 1.5em;
+    border-left: 8px solid #d02525;
+    background-color: #fff0f0;
+    color: #333;
+}
+
+.duration {
+    width: 40%;
+    max-width: 150px;
+    padding: 8px 10px;
+    border: 1px solid #969da3;
+    border-radius: 3px;
+    color: #333;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.duration::placeholder {
+    color: #999;
+}
+
+button {
+
+    justify-content: center;
+    width: auto;
+    padding: .9em 2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #0e72b9;
+    color: #fff;
+    font-weight: 600;
+    font-size: 29px;
+}
+
+button-2:hover {
+    background-color: #0062a9;
+}
+
+audio {
+    font-size: 55px;
+}

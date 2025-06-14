@@ -3,29 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recorder.css" type="text/css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!--title-->
     <title>ECAr｜Easy Chemistry Archive-record</title>
 </head>
 <body>
     <h1>Easy Chemistry Archive-record</h1>
-    <p>マイクへのアクセスを許可してください。<br>［注意］マイクの接続されている端末でのみ動作します．</p>
+    <p>マイク搭載の端末で使用可能。<br>完全無料、ローカルで動作可能。</p>
+    <div class="box-004">
+    「このサイトでマイクの使用を許可する」を有効にしてください
+    </div>
+    <hr noshade>
 
     <div>
         <label for="duration">録音時間（秒）:</label>
-        <input type="number" id="duration" value="10" min="1">
+        <input type="number" id="duration" class="duration" value="10" min="1">
     </div>
     <br>
 
-    <button id="recordButton">録音開始</button>
-    <button id="stopButton" disabled>録音停止</button>
+    <button id="recordButton">開始　　　</button>
+    <button id="stopButton" disabled>停止</button>
 
     <p>残り時間: <span id="timerDisplay">---</span></p>
+    <hr noshade>
 
 
     <h2>録音結果</h2>
-    <audio id="audioPlayer" controls></audio>
+    <audio id="audioPlayer" preload="auto" controls></audio>
     <a id="downloadLink" style="display:none;">録音ファイルをダウンロード</a>
 
     <script src="recorder.js"></script>
+
 </body>
 
 </html>
