@@ -74,7 +74,7 @@ recordButton.addEventListener('click', async () => {
 
     } catch (err) {
         console.error("マイクへのアクセスエラー:", err);
-        alert("マイクへのアクセスが許可されませんでした。");
+        alert("マイクへのアクセスが許可されませんでした。「このサイトで許可する」を有効にしないと実行できません。");
     }
 });
 
